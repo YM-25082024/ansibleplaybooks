@@ -1,0 +1,7 @@
+---
+- name: Ping a specified IP address
+  hosts: myhosts
+  tasks:
+    - name: Ping the specified IP
+      ping:
+

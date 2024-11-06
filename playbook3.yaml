@@ -1,0 +1,13 @@
+---
+- name: Install multiple packages
+  hosts: myhosts
+  become: true
+  tasks:
+    - name: Install Git, Vim
+      apt:
+        name:
+          - git
+          - vim
+          state: present
+        update_cache: yes
+
